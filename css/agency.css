@@ -112,9 +112,14 @@ h1, h2, h3, h4, h5, h6 {
     color: #1d8a3d;
     background-color: white; }
 
-.navbar-custom {
-  background-color: #222222;
-  border-color: transparent; }
+.navbar-default{
+  background-color: #c6c6c6;
+}
+
+.brand-img{
+  padding: 5px;
+}
+
   .navbar-custom .navbar-collapse {
     border-color: rgba(255, 255, 255, 0.98); }
   .navbar-custom .navbar-toggle {
