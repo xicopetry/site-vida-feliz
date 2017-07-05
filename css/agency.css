@@ -154,9 +154,14 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 
-@media (min-width: 768px) {
   .navbar-custom {
     background-color: transparent;
+    border-color: transparent;
+  }
+
+@media (min-width: 768px) {
+  .navbar-custom {
+    /*background-color: transparent;*/
     padding: 25px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
@@ -164,10 +169,9 @@ h1, h2, h3, h4, h5, h6 {
     border: none; }
     .navbar-custom .navbar-nav > .active > a {
       border-radius: 3px; } }
-@media (min-width: 768px) {
   .navbar-custom.affix {
     background-color: #f5f5f5;
-    padding: 15px 0; } }
+    padding: 15px 0; }
 header {
     background-attachment: scroll;
     -webkit-background-size: cover;
@@ -635,7 +639,7 @@ body {
               transform: translate3d(-50%,-50%,0);
 }
 .hero h1 {
-    font-size: 6em;    
+    font-size: 6em;
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -644,18 +648,18 @@ body {
 .fade-carousel .carousel-inner .item .hero {
     opacity: 0;
     -webkit-transition: 2s all ease-in-out .1s;
-       -moz-transition: 2s all ease-in-out .1s; 
-        -ms-transition: 2s all ease-in-out .1s; 
-         -o-transition: 2s all ease-in-out .1s; 
-            transition: 2s all ease-in-out .1s; 
+       -moz-transition: 2s all ease-in-out .1s;
+        -ms-transition: 2s all ease-in-out .1s;
+         -o-transition: 2s all ease-in-out .1s;
+            transition: 2s all ease-in-out .1s;
 }
 .fade-carousel .carousel-inner .item.active .hero {
     opacity: 1;
     -webkit-transition: 2s all ease-in-out .1s;
-       -moz-transition: 2s all ease-in-out .1s; 
-        -ms-transition: 2s all ease-in-out .1s; 
-         -o-transition: 2s all ease-in-out .1s; 
-            transition: 2s all ease-in-out .1s;    
+       -moz-transition: 2s all ease-in-out .1s;
+        -ms-transition: 2s all ease-in-out .1s;
+         -o-transition: 2s all ease-in-out .1s;
+            transition: 2s all ease-in-out .1s;
 }
 
 /********************************/
@@ -675,7 +679,7 @@ body {
 /********************************/
 /*       Slides backgrounds     */
 /********************************/
-.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-1,
 .fade-carousel .slides .slide-2,
 .fade-carousel .slides .slide-3,
 .fade-carousel .slides .slide-4 {
@@ -685,7 +689,7 @@ body {
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url(../img/header-bg.jpg); 
+  background-image: url(../img/header-bg.jpg);
 }
 .fade-carousel .slides .slide-2 {
   background-image: url(../img/header-bg2.jpg);
@@ -701,8 +705,8 @@ body {
 /*          Media Queries       */
 /********************************/
 @media screen and (min-width: 980px){
-    .hero { width: 980px; }    
+    .hero { width: 980px; }
 }
 @media screen and (max-width: 640px){
-    .hero h1 { font-size: 4em; }    
+    .hero h1 { font-size: 4em; }
 }
