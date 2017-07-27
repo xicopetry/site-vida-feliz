@@ -134,9 +134,9 @@ h1, h2, h3, h4, h5, h6 {
   .navbar-custom .nav li a {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 1px;
-    color: #6dde8e; }
+    color: #444; }
     .navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus {
       color: #1d8a3d;
       outline: none; }
@@ -181,13 +181,25 @@ header {
   text-align: center;
   color: white; }
   header .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
     padding-top: 100px;
     padding-bottom: 50px; }
     header .intro-text .intro-lead-in {
-      font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-style: italic;
-      font-size: 22px;
-      line-height: 22px;
+      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 40px;
       margin-bottom: 25px; }
     header .intro-text .intro-heading {
       font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -199,13 +211,12 @@ header {
 
 @media (min-width: 768px) {
   header .intro-text {
-    padding-top: 300px;
+    padding-top: 200px;
     padding-bottom: 200px; }
     header .intro-text .intro-lead-in {
-      font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-style: italic;
-      font-size: 40px;
-      line-height: 40px;
+      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 55px;
+      line-height: 80px;
       margin-bottom: 25px; }
     header .intro-text .intro-heading {
       font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -619,6 +630,8 @@ body {
   height: 10px;
   opacity: 1;
 }
+.carousel-indicators {
+    width: 60%;}
 
 /********************************/
 /*          Hero Headers        */
@@ -675,6 +688,47 @@ body {
     outline: none;
     margin: 20px auto;
 }
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    padding: 7px 16px;
+    font-size: 40px;
+    -webkit-transition: background .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out;
+    transition: background .2s ease-in-out;
+}
+.btn-circle, .btn-circle-pq {
+    margin-top: 15px;
+    border-radius: 100%!important;
+    background: 0 0;
+    position: absolute;
+}
+.btn-white {
+    border: 2px solid #fff;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.btn-white, .intro, .navbar-black a, .navbar-custom .nav li.active a:hover {
+    color: #fff;
+}
+.btn-circle:hover, .btn-white:hover {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+.btn-black {
+    border: 2px solid #444;
+    color: #444;
+}
+.btn-black:hover {
+    outline: 0;
+    color: #666;
+    background: rgba(255,255,255,.3);
+}
 
 /********************************/
 /*       Slides backgrounds     */
@@ -690,9 +744,6 @@ body {
 }
 .fade-carousel .slides .slide-1 {
   background-image: url(../img/header-bg.jpg);
-}
-.fade-carousel .slides .slide-2 {
-  background-image: url(../img/header-bg2.jpg);
 }
 .fade-carousel .slides .slide-3 {
   background-image: url(../img/header-bg3.jpg);
