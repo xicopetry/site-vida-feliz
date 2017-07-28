@@ -761,3 +761,14 @@ body {
 @media screen and (max-width: 640px){
     .hero h1 { font-size: 4em; }
 }
+
+
+@font-face {
+    font-family: 'FuturaMdBT'; /*a name to be used later*/
+    src: url('fonts/Futura Md BT Bold.ttf'); /*URL to font*/
+}
+
+
+.brand-text{
+  font-family: FuturaMdBT;
+}
